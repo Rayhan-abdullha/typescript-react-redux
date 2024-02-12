@@ -1,0 +1,61 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+input {
+  padding: 5px;
+}
+.btn {
+  padding: 5px;
+  cursor: pointer;
+  background-color: rebeccapurple;
+  border: 2px solid rebeccapurple;
+  color: aliceblue;
+  font-weight: 700;
+}
+.btn:hover {
+  color: beige;
+  background-color: rgb(124, 17, 223);
+}
+.todoWrapper {
+  margin-top: 30px;
+}
+.todoItems {
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.todoItems input {
+  width: 17px;
+}
+.todoItems button {
+  width: 50px;
+  height: 20px;
+}
+.todoContent {
+  display: flex;
+  gap: 10px;
+}
+.todoDelete {
+  margin-left: 10px;
+  background-color: rgb(240, 49, 49);
+  border: none;
+  color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.todoEdit {
+  background-color: rgb(4, 130, 220);
+  border: none;
+  color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}

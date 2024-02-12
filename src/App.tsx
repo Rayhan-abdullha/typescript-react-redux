@@ -1,10 +1,14 @@
-import Button from "./components/Button"
+import TodoInput from "./components/TodoInput"
+import TodoList from "./components/TodoList"
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Button bgColor="tomato" fontSize={'20px'} >Click</Button>
-    </>
+    <div className="app">
+      <div>
+        <TodoInput />
+        <TodoList />
+      </div>
+    </div>
   )
 }
 
