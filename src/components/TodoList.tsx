@@ -13,7 +13,7 @@ const TodoList = () => {
                 ))
             }
             {
-                !todos.length && <p>Empty TODO</p>
+                !todos.length && <p className='emptyTodo'>Empty TODO</p>
             }
         </div>
     )

@@ -23,9 +23,9 @@ const TodoItem = ({ item }: TodoTypes) => {
         <div className="todoItems">
             <div className="todoContent">
                 <input onChange={handleIsCompelete} type="checkbox" checked={item.isComplete} />
-
-                <p style={{}}>{item.text}</p>
-
+                {
+                    !item.isComplete ? <p className="todoText">{item.text}</p> : <del className="todoText">{item.text}</del>
+                }
             </div>
             <div className="todoButton">
                 <Button onClick={handleEdit} className="todoEdit">{isEdit ? "Save" : "Edit"}</Button>

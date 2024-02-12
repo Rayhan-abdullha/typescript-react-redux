@@ -13,7 +13,9 @@ body {
   justify-content: center;
   height: 70vh;
 }
-
+form {
+  text-align: center;
+}
 input {
   padding: 5px;
 }
@@ -43,6 +45,9 @@ input {
 .todoItems input {
   width: 17px;
 }
+.todoContent p {
+  width: 200px;
+}
 .todoItems > button {
   width: 50px;
   height: 20px;
@@ -69,6 +74,9 @@ input {
   cursor: pointer;
   border-radius: 5px;
   padding: 2px 5px;
+}
+.emptyTodo {
+  text-align: center;
 }
 
 .modal {
