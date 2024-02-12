@@ -1,5 +1,4 @@
-export function sendData<T>(todo: T): Promise<T> {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function sendData<T extends { text: string }>(todo: T): Promise<T> {
     return new Promise((resolve, reject) => {
         if (todo?.text) {
             setTimeout(() => {
@@ -10,7 +9,6 @@ export function sendData<T>(todo: T): Promise<T> {
             setTimeout(() => {
                 reject(error)
             }, 1000);
-            
         }
     })
 }
