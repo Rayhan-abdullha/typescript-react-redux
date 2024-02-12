@@ -5,7 +5,6 @@ type ButtonType = {
     onClick: () => void
 }
 function Button({ className, onClick, children }: ButtonType) {
-
     return (
         <button onClick={onClick} className={className}>
             {children}

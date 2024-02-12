@@ -12,6 +12,9 @@ const TodoList = () => {
                     <TodoItem item={item} key={item.id} />
                 ))
             }
+            {
+                !todos.length && <p>Empty TODO</p>
+            }
         </div>
     )
 }
